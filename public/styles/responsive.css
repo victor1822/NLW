@@ -36,6 +36,14 @@
     #page-search-results main .cards{
         grid-template-columns: 1fr 1fr;
     }
+
+    #page-create-point form .field-group{
+        flex-direction: column;
+    }
+
+    #page-create-point form .field-group .field + .field{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 450px){
@@ -75,5 +83,13 @@
 @media (max-height: 760px){
     #page-home{
         background-position-y: 200px;
+    }
+}
+
+@media (max-width: 560px){
+    #page-create-point form fieldset .items-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 12px;
     }
 }
